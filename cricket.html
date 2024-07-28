@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Bat Ball Stamp Game</h1>
+    <button onclick="
+    console. log('you have chosen Bat');
+    let randomNumber = Math.random() * 3;
+    let computerChoice;
+   /* if ( randomNumber > 0 && randomNumber<=1){
+        computerChoice = 'Bat'
+        // console.log('computer Choice is bat')
+    } else if (randomNumber>1 && randomNumber<=2)
+    {
+        computerChoice = 'ball'
+        // console.log('computer Choice is ball')
+    } else{
+        computerChoice = 'Stamp'
+        // console.log('computer Choice is Stamp')
+    }
+    console.log(' computer Choice is ' + computerChoice);
+
+    if(computerChoice === 'ball'){
+        console.log('User won.')
+    }else if (computerChoice === 'bat'){
+        console.log('it is die')
+    }else{
+        console.log('computer has won')
+    }*/
+    if ( randomNumber > 0 && randomNumber<=1){
+        computerChoice = 'Bat';
+    } else if (randomNumber>1 && randomNumber<=2)
+    {
+        computerChoice = 'ball';
+    } else{
+        computerChoice = 'Stamp';
+    }
+    // console.log(' computer Choice is ' + computerChoice);
+    const computerChoicemsg = `computer Choice is + ${computerChoice}`;
+    resultMSG ='';
+    if(computerChoice === 'ball'){
+        resultMSG ='User won.';
+    }else if (computerChoice === 'bat'){
+        resultMSG = 'it is tie';
+    }else{
+        resultMSG = 'computer has won';
+    }
+    alert(` you have chosen bat. Computer Choice is  ${computerChoice} ${resultMSG}`);
+ 
+    ">bat</button>
+
+
+    <button onclick="
+    console. log('you have chosen Ball');
+    randomNumber = Math.random() * 3;
+    if ( randomNumber > 0 && randomNumber<=1){
+        computerChoice = 'Bat';
+    } else if (randomNumber>1 && randomNumber<=2)
+    {
+        computerChoice = 'ball';
+    } else{
+        computerChoice = 'Stamp';
+    }
+    // console.log(' computer Choice is ' + computerChoice);
+    computerChoicemsg = 'computer Choice is' + computerChoice;
+    resultMSG = '';
+    if(computerChoice === 'ball'){
+        resultMSG ='it is a tie.';
+    }else if (computerChoice === 'bat'){
+        resultMSG = 'computer has won';
+    }else{
+        resultMSG = 'computer has won';
+    }
+    alert(` you have chosen ball. Computer Choice is  ${computerChoice} ${resultMSG}`);
+ "
+    
+    >Ball</button>
+
+    
+    <button onclick="
+    console. log('you have chosen Stamp');
+    randomNumber = Math.random() * 3;
+    if ( randomNumber > 0 && randomNumber<=1){
+        computerChoice = 'Bat';
+    } else if (randomNumber>1 && randomNumber<=2)
+    {
+        computerChoice = 'ball';
+    } else{
+        computerChoice = 'Stamp'
+    }
+    // console.log(' computer Choice is ' + computerChoice);
+    computerChoicemsg = 'computer Choice is' + computerChoice;
+    resultMSG;
+    if(computerChoice === 'ball'){
+        resultMSG ='computer has won.'
+    }else if (computerChoice === 'bat'){
+        resultMSG = 'user won'
+    }else{
+        resultMSG = 'it is tie'
+    }
+    alert(` you have chosen Stamp. Computer Choice is  ${computerChoice} ${resultMSG}`);
+ "
+    >Stamp</button>
+</body>
+</html>
